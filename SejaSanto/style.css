@@ -1,0 +1,278 @@
+/* Cores e estilos gerais */
+:root {
+    --azul-claro: #a8d8ff;
+    --azul-medio: #5da9e9;
+    --amarelo-claro: #fff5a5;
+    --amarelo-medio: #ffe066;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+  }
+  
+  body {
+    background-color: var(--azul-claro);
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Header e navegação */
+  header {
+    background: linear-gradient(to bottom, var(--amarelo-claro), var(--azul-claro));
+    padding: 2rem 0;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  header h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+  }
+  
+  header p {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #34495e;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    background-color: var(--amarelo-medio);
+    color: #2c3e50;
+    transform: translateY(-3px);
+  }
+  
+  /* Seções principais */
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .section {
+    margin-bottom: 4rem;
+    background-color: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .section h2 {
+    color: #2c3e50;
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    border-bottom: 3px solid var(--amarelo-medio);
+    padding-bottom: 10px;
+  }
+  
+  .section h3 {
+    color: #2c3e50;
+    font-size: 1.6rem;
+    margin: 1.5rem 0 1rem;
+  }
+  
+  .section p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+  }
+  
+  .section ul {
+    margin-left: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .section ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+  }
+  
+  /* Imagens */
+  .image-container {
+    text-align: center;
+    margin: 1.5rem 0;
+  }
+  
+  .section-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Timeline para o processo de canonização */
+  .timeline {
+    list-style: none;
+    margin-left: 0;
+    position: relative;
+    padding-left: 30px;
+  }
+  
+  .timeline:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 4px;
+    background: var(--amarelo-medio);
+    border-radius: 2px;
+  }
+  
+  .timeline li {
+    position: relative;
+    margin-bottom: 1.5rem;
+    padding-left: 20px;
+  }
+  
+  .timeline li:before {
+    content: "";
+    position: absolute;
+    left: -30px;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--azul-medio);
+    border: 4px solid var(--amarelo-claro);
+  }
+  
+  .timeline .date {
+    display: block;
+    font-weight: bold;
+    color: var(--azul-medio);
+    margin-bottom: 0.3rem;
+  }
+  
+  /* Citações */
+  .quote {
+    background-color: var(--azul-claro);
+    border-left: 5px solid var(--azul-medio);
+    padding: 1rem;
+    margin: 1.5rem 0;
+    border-radius: 0 10px 10px 0;
+  }
+  
+  .quote p {
+    font-style: italic;
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  
+  /* Footer */
+  footer {
+    background: linear-gradient(to top, var(--amarelo-claro), var(--azul-claro));
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+  }
+  
+  footer p {
+    margin: 0.5rem 0;
+    font-weight: bold;
+    color: #2c3e50;
+  }
+  
+  /* Ícones do Toy Story */
+  .toy-story-icon {
+    width: 80px;
+    height: 80px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+  }
+  
+  .header-icon {
+    background-image: url("SejaSanto/imagens/woody2.png");
+    top: 20px;
+    right: 20px;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .left-icon {
+    background-image: url("SejaSanto/imagens/Jessie2.png");
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .right-icon {
+    background-image: url("SejaSanto\imagens\SrBatata.png");
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .footer-icon {
+    background-image: url("SejaSanto\imagens\1alien.png");
+    bottom: 20px;
+    left: 20px;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 2.5rem;
+    }
+  
+    header p {
+      font-size: 1.2rem;
+    }
+  
+    nav ul {
+      flex-direction: column;
+    }
+  
+    nav ul li {
+      margin: 5px 0;
+    }
+  
+    .section {
+      padding: 1.5rem;
+    }
+  
+    .toy-story-icon {
+      width: 60px;
+      height: 60px;
+    }
+  
+    .left-icon,
+    .right-icon {
+      display: none;
+    }
+  }
+  
